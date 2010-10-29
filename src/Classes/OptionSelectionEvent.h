@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Sparrow.h>
 
-#define EVENT_TYPE_OPTION_ADD @"AdditionOptionEvent"
-#define EVENT_TYPE_OPTION_SUBTRACT @"SubtractOptionEvent"
-#define EVENT_TYPE_OPTION_MULTIPLY @"MultiplyOptionEvent"
-#define EVENT_TYPE_OPTION_DEVIDE @"DevideOptionEvent"
+#define EVENT_TYPE_BEGIN_GAME @"beginGameEvent"
 
 @interface OptionSelectionEvent : SPEvent 
 {

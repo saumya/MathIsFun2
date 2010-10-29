@@ -46,10 +46,6 @@
 -(SPSprite *)makeText:(NSString *)text withColor:(int)colorValue andSize:(int)size withShadowColor:(int)shadow;
 -(SPQuad *)makeSquareWithColor:(int)colorValue andWidth:(int)widthValue andHeight:(int)heightValue;
 
--(void)onAddOptionSelect:(SPTouchEvent *)event;
--(void)onSubtractSelect:(SPTouchEvent *)event;
-
-
 @property (assign) SPQuad *background;
 @property (assign) SPSprite *optionAddition;
 @property (assign) SPSprite *optionSubtraction;

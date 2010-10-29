@@ -17,12 +17,12 @@
 		990F58B01263B9560094D20A /* OptionSelectionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 990F58AF1263B9560094D20A /* OptionSelectionEvent.m */; };
 		99706E081265994B00FE0ADB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 99706E071265994B00FE0ADB /* Icon.png */; };
 		99706E1E1265B60900FE0ADB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 99706E1D1265B60900FE0ADB /* Default.png */; };
+		99C09415127A9820003ACBF6 /* GameAddition+ShadowText.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C09414127A9820003ACBF6 /* GameAddition+ShadowText.m */; };
+		99C21445127ACE0C0022FDC9 /* ScoreCardSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C21444127ACE0C0022FDC9 /* ScoreCardSprite.m */; };
 		99C94D6B125C73F200527697 /* GameScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C94D6A125C73F200527697 /* GameScreen.m */; };
 		99C94D7E125C7D7700527697 /* GameAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C94D7D125C7D7700527697 /* GameAddition.m */; };
 		99C94DF7125CA1BC00527697 /* QuestionTypeSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C94DF6125CA1BC00527697 /* QuestionTypeSprite.m */; };
 		99C95090125FD8BD00527697 /* CorrectAnswerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9508F125FD8BD00527697 /* CorrectAnswerEvent.m */; };
-		99C951DD1262E1BB00527697 /* accept.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C951DC1262E1BB00527697 /* accept.png */; };
-		99C951DF1262E1C600527697 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C951DE1262E1C600527697 /* delete.png */; };
 		DE3F093811B7B9DC009D4DB0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3F093711B7B9DC009D4DB0 /* AVFoundation.framework */; };
 		DE3F093A11B7B9DC009D4DB0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3F093911B7B9DC009D4DB0 /* AudioToolbox.framework */; };
 		DE3F097811B7BABD009D4DB0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3F097711B7BABD009D4DB0 /* OpenAL.framework */; };
@@ -73,6 +73,10 @@
 		990F58AF1263B9560094D20A /* OptionSelectionEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionSelectionEvent.m; sourceTree = "<group>"; };
 		99706E071265994B00FE0ADB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		99706E1D1265B60900FE0ADB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		99C09413127A9820003ACBF6 /* GameAddition+ShadowText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameAddition+ShadowText.h"; sourceTree = "<group>"; };
+		99C09414127A9820003ACBF6 /* GameAddition+ShadowText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GameAddition+ShadowText.m"; sourceTree = "<group>"; };
+		99C21443127ACE0C0022FDC9 /* ScoreCardSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreCardSprite.h; sourceTree = "<group>"; };
+		99C21444127ACE0C0022FDC9 /* ScoreCardSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreCardSprite.m; sourceTree = "<group>"; };
 		99C94D69125C73F200527697 /* GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScreen.h; sourceTree = "<group>"; };
 		99C94D6A125C73F200527697 /* GameScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScreen.m; sourceTree = "<group>"; };
 		99C94D7C125C7D7700527697 /* GameAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAddition.h; sourceTree = "<group>"; };
@@ -81,8 +85,6 @@
 		99C94DF6125CA1BC00527697 /* QuestionTypeSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTypeSprite.m; sourceTree = "<group>"; };
 		99C9508E125FD8BD00527697 /* CorrectAnswerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorrectAnswerEvent.h; sourceTree = "<group>"; };
 		99C9508F125FD8BD00527697 /* CorrectAnswerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorrectAnswerEvent.m; sourceTree = "<group>"; };
-		99C951DC1262E1BB00527697 /* accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accept.png; sourceTree = "<group>"; };
-		99C951DE1262E1C600527697 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		DE3F093711B7B9DC009D4DB0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DE3F093911B7B9DC009D4DB0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DE3F097711B7BABD009D4DB0 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -161,8 +163,6 @@
 			children = (
 				99706E071265994B00FE0ADB /* Icon.png */,
 				99706E1D1265B60900FE0ADB /* Default.png */,
-				99C951DE1262E1C600527697 /* delete.png */,
-				99C951DC1262E1BB00527697 /* accept.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Application-Info.plist */,
 			);
@@ -195,6 +195,10 @@
 				99C94DF6125CA1BC00527697 /* QuestionTypeSprite.m */,
 				990F56D712632AA50094D20A /* OptionSprite.h */,
 				990F56D812632AA50094D20A /* OptionSprite.m */,
+				99C09413127A9820003ACBF6 /* GameAddition+ShadowText.h */,
+				99C09414127A9820003ACBF6 /* GameAddition+ShadowText.m */,
+				99C21443127ACE0C0022FDC9 /* ScoreCardSprite.h */,
+				99C21444127ACE0C0022FDC9 /* ScoreCardSprite.m */,
 			);
 			name = gameLib;
 			sourceTree = "<group>";
@@ -286,8 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				99C951DD1262E1BB00527697 /* accept.png in Resources */,
-				99C951DF1262E1C600527697 /* delete.png in Resources */,
 				99706E081265994B00FE0ADB /* Icon.png in Resources */,
 				99706E1E1265B60900FE0ADB /* Default.png in Resources */,
 			);
@@ -309,6 +311,8 @@
 				99C95090125FD8BD00527697 /* CorrectAnswerEvent.m in Sources */,
 				990F56D912632AA50094D20A /* OptionSprite.m in Sources */,
 				990F58B01263B9560094D20A /* OptionSelectionEvent.m in Sources */,
+				99C09415127A9820003ACBF6 /* GameAddition+ShadowText.m in Sources */,
+				99C21445127ACE0C0022FDC9 /* ScoreCardSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

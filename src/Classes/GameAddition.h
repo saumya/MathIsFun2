@@ -11,11 +11,16 @@
 #import <QuestionTypeSprite.h>
 #import <OptionSprite.h>
 #import <OptionSelectionEvent.h>
+#import <ScoreCardSprite.h>
 
 @interface GameAddition : SPSprite
 {
 	SPQuad *background;
 	SPSprite *questionType;
+	
+	SPSprite *questionTimeCounter;
+	SPTextField *qtText;
+	int qtTime;
 	
 	QuestionTypeSprite *qType;
 	
@@ -31,10 +36,19 @@
 	NSInteger *timerCounter;
 	
 	OptionSprite *optionSelectionSprite;
+	
+	//difficulty level by increasing the max value of operands
+	int maxOperandValue;
+	//score card
+	ScoreCardSprite *scoreCard;
 }
 
 @property (assign) SPQuad *background;
 @property (assign) SPSprite *questionType;
+
+@property (assign) SPSprite *questionTimeCounter;
+@property (assign) SPTextField *qtText;
+@property (assign) int qtTime;
 
 @property (assign) QuestionTypeSprite *qType;
 
@@ -51,18 +65,23 @@
 
 @property (assign) OptionSprite *optionSelectionSprite;
 
+@property (assign) int maxOperandValue;
+@property (assign) ScoreCardSprite *scoreCard;
+
 
 -(id)initGame;
 -(void)renderGame;
 -(void)initGameAgain;
+-(void)initGameAgainWithSubtraction;
+-(void)initGameAgainWithMultiplication;
+-(void)initGameAgainWithDivision;
 -(int) generateRandom:(int)maxValue;
 -(void)waitAndInitAgain;
 
 -(void) onWrongAnswer:(CorrectAnswerEvent *)event;
 -(void) onCorrectAnswer:(CorrectAnswerEvent *)event;
 
--(void)onAddSelect:(OptionSelectionEvent *)event;
--(void)onSubtractSelect:(OptionSelectionEvent *)event;
+-(void)onGameBegin:(OptionSelectionEvent *)event;
 -(void)showOptions:(BOOL)option;
 
 @end

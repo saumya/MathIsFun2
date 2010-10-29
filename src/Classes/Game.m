@@ -22,8 +22,22 @@
 
 -(void) beginGame
 {
+	/*
+	[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(orientationDetected:) 
+												 name:@"UIDeviceOrientationDidChangeNotification" 
+											   object:nil];
+	*/ 
 	GameScreen *gs=[[GameScreen alloc] initWithDefaultOrientation];
 	[self addChild:gs];
 	[gs release];
 }
+/*
+-(void)orientationDetected:(UIEvent *)event
+{
+	NSLog(@"orientation Change : %i",[UIDevice currentDevice].orientation);
+}
+*/
+
 @end

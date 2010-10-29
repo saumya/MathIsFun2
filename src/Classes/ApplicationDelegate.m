@@ -47,6 +47,11 @@
     [SPMatrix purgePool];    
 }
 
+-(BOOL)shouldAutoRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return YES;
+}
+
 - (void)dealloc 
 {
     [SPAudioEngine stop];

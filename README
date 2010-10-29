@@ -1,12 +1,13 @@
 MathIsFun2 is short form of "Math is fun too"
-v 01.01.01
+v 01.02.01
 
-Made with Sparrow framework 0.9 version. 
-A simple game where the user is asked to finish as many questions as possible. No time bound, no scores.
+Made with Sparrow framework 1.0 version.
+ 
+A simple game where the user is asked to finish as many questions as possible. 
+Uses accelerometer to change the mode of the questions.
+The question changes when the counter becomes 1000.
 
-Checked with version 1.0 of Sparrow framework. It works fine.
-
-Just checking the branches option of GIT.
+Thats all to it.
 
 Sparrow framework : http://www.sparrow-framework.org/
 Unlicense : http://unlicense.org/

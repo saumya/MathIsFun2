@@ -48,14 +48,14 @@
 	self.background=[self makeSquareWithColor:0x2F2D37 andWidth:320 andHeight:480];
 	[self addChild:background];
 	
-	self.titleSprite=[self makeText:@"Choose a type to play. Then finish up as many as you can. Feedback is almost immediate and it will not go forward unless you give the correct feedback." 
+	self.titleSprite=[self makeText:@"Tap to play. Finish up as many as you can. Question will change when counter becomes 1000." 
 						  withColor:0x655F81 
 							andSize:20 
 					withShadowColor:0x000000];
 	self.titleSprite.x=10;
 	self.titleSprite.y=5;
 	
-	self.footerSprite=[self makeText:@"When correct answer is provided, it waits for sometime, just to make you aware about the questions and your answers. What are you waiting for?" 
+	self.footerSprite=[self makeText:@"While playing, rotate the device to change mode!" 
 						   withColor:0x655F81 
 							 andSize:20 
 					 withShadowColor:0x000000];
@@ -124,11 +124,9 @@
 	[self addChild:[self optionSubtraction]];
 	[self addChild:[self optionMultiplication]];
 	[self addChild:[self optionDivision]];
-	//adds the event handlers
-	[[self optionAddition] addEventListener:@selector(onAddOptionSelect:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-	[[self optionSubtraction] addEventListener:@selector(onSubtractSelect:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-	[[self optionMultiplication] addEventListener:@selector(onMultiplySelect:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-	[[self optionDivision] addEventListener:@selector(onDivideSelect:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+	
+	//just one event listener
+	[self addEventListener:@selector(onUserAction:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 }
 
 -(SPTextField *)makeSymbol:(NSString *)type withColor:(int)colorValue
@@ -199,48 +197,11 @@
 	return shadowdedContent;
 }
 
--(void)onAddOptionSelect:(SPTouchEvent *)event
+-(void)onUserAction:(SPTouchEvent *)event
 {
-	//NSLog(@"OptionSprite : onAddOptionSelect : ");
 	SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
 	if (touch) {
-		//NSLog(@"---------ADD option---selected-------");
-		OptionSelectionEvent *opEvt=[[OptionSelectionEvent alloc] initWithType:EVENT_TYPE_OPTION_ADD bubbles:TRUE];
-		[self dispatchEvent:opEvt];
-		[opEvt release];
-	}
-}
--(void)onSubtractSelect:(SPTouchEvent *)event
-{
-	//NSLog(@"OptionSprite : onSubtractSelect : ");
-	SPTouch *touch=[[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-	if (touch) {
-		//NSLog(@"--------SUBTRACT option---selected----");
-		OptionSelectionEvent *opEvt=[[OptionSelectionEvent alloc] initWithType:EVENT_TYPE_OPTION_SUBTRACT bubbles:TRUE];
-		[self dispatchEvent:opEvt];
-		[opEvt release];
-	}
-}
-
--(void)onMultiplySelect:(SPTouchEvent *)event
-{
-	//NSLog(@"TODO: Multiply selection ");
-	SPTouch *touch=[[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-	if (touch) {
-		//NSLog(@"--------SUBTRACT option---selected----");
-		OptionSelectionEvent *opEvt=[[OptionSelectionEvent alloc] initWithType:EVENT_TYPE_OPTION_MULTIPLY bubbles:TRUE];
-		[self dispatchEvent:opEvt];
-		[opEvt release];
-	}
-}
-
--(void)onDivideSelect:(SPTouchEvent *)event
-{
-	//NSLog(@"TODO: Divide selection ");
-	SPTouch *touch=[[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-	if (touch) {
-		//NSLog(@"--------SUBTRACT option---selected----");
-		OptionSelectionEvent *opEvt=[[OptionSelectionEvent alloc] initWithType:EVENT_TYPE_OPTION_DEVIDE bubbles:TRUE];
+		OptionSelectionEvent *opEvt=[[OptionSelectionEvent alloc] initWithType:EVENT_TYPE_BEGIN_GAME bubbles:TRUE];
 		[self dispatchEvent:opEvt];
 		[opEvt release];
 	}
