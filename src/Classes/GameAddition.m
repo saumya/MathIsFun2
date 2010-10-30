@@ -571,6 +571,7 @@
 -(void)onGameBegin:(OptionSelectionEvent *)event
 {
 	//NSLog(@"GameAddition : onGameBegin :");
+	[self removeEventListener:@selector(onEachFrameAlertUser:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
 	[self initGameAgain];
 	[self showOptions:FALSE];
 }
