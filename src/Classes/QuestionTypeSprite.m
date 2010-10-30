@@ -120,20 +120,6 @@
 		[self addChild:questionShadow];
 		[self addChild:questionSymbol];
 		
-		//creates the images for the right/wrong answer
-		//no texturing for this version, eveything should be drawn
-		/*
-		SPTexture *rightTexture=[SPTexture textureWithContentsOfFile:@"accept.png"];
-		SPTexture *wrongTexture=[SPTexture textureWithContentsOfFile:@"delete.png"];
-		self.rightImage=[SPImage imageWithTexture:rightTexture];
-		self.wrongImage=[SPImage imageWithTexture:wrongTexture];
-		[self addChild:rightImage];
-		[self addChild:wrongImage];
-		 */
-		//[rightTexture release];
-		//[wrongTexture release];//seems they do not need to be released!
-		//rightImage.visible=false;
-		//wrongImage.visible=false;
 		//position elements
 		self.border.x=xPos-2;//2 pixel border
 		self.border.y=yPos-2;
@@ -143,12 +129,7 @@
 		self.questionSymbol.y=yPos-25;
 		self.questionShadow.x=xPos+1;
 		self.questionShadow.y=yPos-24;
-		/*
-		self.rightImage.x=xPos+10;//just to make sure it is not in the left most part
-		self.rightImage.y=yPos-40;//making sure that it comes alittle up of the question
-		self.wrongImage.x=xPos;
-		self.wrongImage.y=yPos-40;//yPos-45
-		*/
+		
 		//finally initialising the other properties
 		self.isCorrectAnswer=NO;
 		//adds event listeners for these
@@ -287,10 +268,6 @@
 
 -(void)resetResponseImage
 {
-	/*
-	[self wrongImage].visible=FALSE;
-	[self rightImage].visible=FALSE;
-	*/
 	self.border.color=0x324200;
 }
 
@@ -303,16 +280,13 @@
 			//Do not need as the option is now by rotation of the device
 		}else {
 			if (self.isCorrectAnswer) {
-				//[self rightImage].visible=true;
 				self.border.color=0x00ff00;
 				//Will dispatch an event
 				CorrectAnswerEvent *caEvt=[[CorrectAnswerEvent alloc] initWithType:EVENT_TYPE_CORRECT_ANSWER bubbles:true];
 				[self dispatchEvent:caEvt];
 				[caEvt release];
 			}else if(self.isCorrectAnswer==FALSE){
-				//[self wrongImage].visible=true;
 				self.border.color=0xff0000;
-
 				CorrectAnswerEvent *waEvt=[[CorrectAnswerEvent alloc] initWithType:EVENT_TYPE_WRONG_ANSWER bubbles:true];
 				[self dispatchEvent:waEvt];
 				[waEvt release];
