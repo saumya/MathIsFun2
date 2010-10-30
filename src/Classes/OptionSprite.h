@@ -3,7 +3,7 @@
 //  MathIsFun
 //
 //  Created by saumya ray on 10/11/10.
-//  Copyright 2010 Personal. All rights reserved.
+//  http://www.saumyaray.com , twit me @saumya
 //
 
 #import <Foundation/Foundation.h>

@@ -3,7 +3,7 @@
 //  MathIsFun2
 //
 //  Created by saumya ray on 10/6/10.
-//  Copyright 2010 Personal. All rights reserved.
+//  http://www.saumyaray.com , twit me @saumya
 //
 
 #import "GameScreen.h"

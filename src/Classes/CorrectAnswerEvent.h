@@ -3,8 +3,9 @@
 //  MathIsFun2
 //
 //  Created by saumya ray on 10/9/10.
-//  Copyright 2010 Personal. All rights reserved.
+//  http://www.saumyaray.com , twit me @saumya
 //
+
 
 #import <Foundation/Foundation.h>
 #import <Sparrow.h>
