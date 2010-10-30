@@ -59,6 +59,8 @@
 	//NSLog(@"orientation Change : %i",[UIDevice currentDevice].orientation);
 	//NSLog(@"90 degrees= %f",(M_PI/180)*90);
 	
+	[self removeEventListener:@selector(onEachFrameAlertUser:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
+	
 	int orientation=[UIDevice currentDevice].orientation;
 	if (orientation==2) {
 		self.x=320+10;
@@ -82,8 +84,6 @@
 		self.rotation=0;
 		[self initGameAgain];
 	}
-	
-	//NSLog(@"TODO: UI Question update : yeahh");
 }
 
 

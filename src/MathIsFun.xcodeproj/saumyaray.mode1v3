@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -275,14 +277,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
+									<integer>14</integer>
 									<integer>10</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 55}, {282, 593}}</string>
+							<string>{{0, 0}, {282, 593}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -312,14 +314,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>OptionSprite.m</string>
+								<string>GameAddition.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>OptionSprite.m</string>
+										<string>GameAddition.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>99C2150C127AF5550022FDC9</string>
+										<string>99C21532127BC1390022FDC9</string>
 										<key>history</key>
 										<array>
 											<string>99E8AA0D126FA3AF003D1F1D</string>
@@ -344,17 +344,17 @@
 											<string>99C09416127A99E6003ACBF6</string>
 											<string>99C09418127A99E6003ACBF6</string>
 											<string>99C09448127AA1B5003ACBF6</string>
-											<string>99C0945B127AA238003ACBF6</string>
 											<string>99C2144E127AD3B70022FDC9</string>
 											<string>99C2144F127AD3B70022FDC9</string>
-											<string>99C21450127AD3B70022FDC9</string>
-											<string>99C21454127AD3B70022FDC9</string>
 											<string>99C2148E127AD7B00022FDC9</string>
-											<string>99C21495127ADA370022FDC9</string>
 											<string>99C214A9127ADECB0022FDC9</string>
-											<string>99C214AA127ADECB0022FDC9</string>
-											<string>99C214E0127AF49C0022FDC9</string>
-											<string>99C21500127AF4FB0022FDC9</string>
+											<string>99C21516127BC12D0022FDC9</string>
+											<string>99C21517127BC12D0022FDC9</string>
+											<string>99C21518127BC12D0022FDC9</string>
+											<string>99C21519127BC12D0022FDC9</string>
+											<string>99C2151A127BC12D0022FDC9</string>
+											<string>99C2151B127BC12D0022FDC9</string>
+											<string>99C2151D127BC12D0022FDC9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -366,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {763, 526}}</string>
+								<string>{{0, 0}, {763, 523}}</string>
 								<key>RubberWindowFrame</key>
 								<string>102 118 1067 652 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>526pt</string>
+							<string>523pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -386,14 +386,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 531}, {763, 80}}</string>
+								<string>{{0, 528}, {763, 83}}</string>
 								<key>RubberWindowFrame</key>
 								<string>102 118 1067 652 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>80pt</string>
+							<string>83pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -412,9 +412,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>99C2150D127AF5550022FDC9</string>
+				<string>99C21533127BC1390022FDC9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>99C2150E127AF5550022FDC9</string>
+				<string>99C21534127BC1390022FDC9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -552,6 +552,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>99811F2D1243F5C5006DB2BF</string>
 		<string>/Users/saumyaray/devHome/iApps/MathIsFun_GitHub/MathIsFun2/src/MathIsFun.xcodeproj</string>
 	</array>
@@ -633,7 +635,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>99811F2D1243F5C5006DB2BF</string>
-				<string>99C2150F127AF5550022FDC9</string>
+				<string>99C21535127BC1390022FDC9</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -755,13 +757,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>99C214F9127AF4F00022FDC9</string>
+				<string>99C21536127BC1390022FDC9</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>99C214FA127AF4F00022FDC9</string>
-				<string>99C214FB127AF4F00022FDC9</string>
-				<string>99C214FC127AF4F00022FDC9</string>
-				<string>99C214FD127AF4F00022FDC9</string>
-				<string>99C214FE127AF4F00022FDC9</string>
+				<string>99C21537127BC1390022FDC9</string>
+				<string>99C21538127BC1390022FDC9</string>
+				<string>99C21539127BC1390022FDC9</string>
+				<string>99C2153A127BC1390022FDC9</string>
+				<string>99C2153B127BC1390022FDC9</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -923,7 +925,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>99C214FF127AF4F00022FDC9</string>
+				<string>99C2153C127BC1390022FDC9</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
