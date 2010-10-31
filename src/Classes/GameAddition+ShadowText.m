@@ -39,5 +39,9 @@
 	
 	return shadowdedContent;
 }
+-(void)showInfo
+{
+	NSLog(@"This is Category %@",self);
+}
 
 @end

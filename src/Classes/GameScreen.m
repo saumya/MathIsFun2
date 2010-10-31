@@ -22,6 +22,7 @@
 -(void)initThis
 {
 	GameAddition *gameAddition=[[GameAddition alloc] initGame]; 
+	[gameAddition showInfo];
 	[self addChild:gameAddition];
 	[gameAddition release];
 }

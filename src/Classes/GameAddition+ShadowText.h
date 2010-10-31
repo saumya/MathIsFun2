@@ -15,5 +15,6 @@
 			withColor:(int)colorValue 
 			  andSize:(int)size 
 	  withShadowColor:(int)shadowColor;
+-(void)showInfo;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "GameAddition.h"
-#import "GameAddition+ShadowText.h"
 
 
 @implementation GameAddition
@@ -59,6 +58,9 @@
 	//NSLog(@"orientation Change : %i",[UIDevice currentDevice].orientation);
 	//NSLog(@"90 degrees= %f",(M_PI/180)*90);
 	
+	if (self.optionSelectionSprite.visible) {
+		//DO Nothing
+	}else {
 	[self removeEventListener:@selector(onEachFrameAlertUser:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
 	
 	int orientation=[UIDevice currentDevice].orientation;
@@ -83,6 +85,7 @@
 		self.y=0;
 		self.rotation=0;
 		[self initGameAgain];
+	}
 	}
 }
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Sparrow.h>
-#import <GameAddition.h>
+#import <GameAddition+ShadowText.h>
 
 @interface GameScreen : SPSprite
 {
